@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vuejs training</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css1">
+<script src="training.js" defer> </script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js" ></script>
+  
+  
+  <!--<script src="en.js" ></script>-->
+  
+  <script src="typewriter-bundle.min.js" defer></script>
+<span id="typewriter" class="typewriter" defer></span>
+
+<span class="caret" defer>&nbsp;</span>
+
+<!--<script src="component1.js" defer></script>-->
+</head>
+
+<body >
+
+<div id="app">
+  {{ message }}
+  <textarea v-model="message" placeholder="modifier"></textarea>
+   {{fonct5}}
+  
+</div>
+
+<div id="app-2">
+  <span v-bind:title="message">
+    Passez votre souris sur moi pendant quelques secondes
+    pour voir mon titre lié dynamiquement !
+  </span>
+</div>
+<div id="app-3">
+  <p v-if="seen">Maintenant vous me voyez</p>
+  <p v-else>maintenant vous n 'arrivez pas à me voir</p>
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage" key="1">Modifier1</button>
+  <button v-on:click="fonct1" key="2">Modifier2</button>
+  <p>{{message}}</p>
+  <p>l'inverse: "{{fonct2}}"</p>
+   <p> "{{fonct4}}"</p>
+   
+   <input type="checkbox" id="checkbox"  v-model="seen">
+<label for="seen">{{ seen }}</label>
+   
+</div>
+
+<div id="demo">
+first name:{{firstName}}<br>
+last name :{{lastName}}<br>
+full name :<input v-model="fonct6">
+</div>
+
+<div id="example-1">
+<button v-on:click="greet">Dire Bonjour</button>
+<button v-on:click="warn('Le formulaire ne peut être soumis pour le moment.', $event)">
+  Soumettre
+</button>
+</div>
+
+<div id='examplee'>
+  <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+    <label for="jack">Jack</label>
+  <input type="checkbox" id="john" value="John" v-model="checkedNames">
+  <label for="john">John</label>
+  <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+  <label for="mike">Mike</label>
+  <br>
+  <span>Noms cochés : {{ checkedNames }}</span>
+  
+  
+  <input type="radio" v-model="picked" value="a">
+<input type="checkbox" v-model="toggle">
+<select v-model="selected">
+  <option value="abc">ABC</option>
+  
+</select>
+ <!--<blog-post post-title="hello!"></blog-post>-->
+ 
+<!-- <message type="error" :messagee="messagee"></message>-->
+ </div>
+ 
+
+  
+  
+
+<!--<div id='vv'>
+<comp1 type="error" :message="message"></comp1>
+</div>-->
+
+<h2> question/answer example </h2>
+
+<div id="watch-example">
+  <p>
+    Posez votre question (réponse par Oui ou Non) :
+    <input v-model="question">
+  </p>
+  <p>{{ answer }}</p>
+  
+</div>
+
+<div id="components-demo">
+  <button-counter></button-counter>
+  <button-counter></button-counter>
+  <nihaha title="hahahahahahah"></nihaha>
+  <nihaha title="hohohohohoh"></nihaha>
+  
+</div>
+<div id="chismia">
+<div :style="{fontSize: postFontSize + 'em'}">
+<nihaha v-for="a in p"
+ v-bind:key="a.id"
+  v-bind:title="a.title" v-on:enlarge-text="postFontSize+=0.1">
+  </nihaha>
+  <button>finahoau </button>
+  
+  </div>
+ <nihaha elt="yarbi ykhdam lia hadchi"></niahah>
+</div>
+
+
+
+<div id="vue9">
+
+<componentymkan prop-c=52></componenentymkan>
+</div>
+
+<div id="apppp">
+    <el-button @click="visible = true">el-Button</el-button>
+    <el-dialog :visible.sync="visible" title="Hello world">
+      <p>Try Element</p>
+    </el-dialog>
+  </div>
+
+
+  <div id="a">
+  <div class="block">
+    <span class="demonstration">Entrez la date de réservation</span>
+    <el-date-picker
+      v-model="value2"
+      type="datetime"
+      placeholder="Select date and time"
+      :picker-options="pickerOptions1">
+    </el-date-picker>
+  </div>
+  </div>
+  
+  
+
+  <vue-typer
+  :text='["Arya Stark","Jon Snow","Daenerys Targaryen","Melisandre","Tyrion Lannister"]'
+  :repeat='Infinity'
+  :shuffle='false'
+  initial-action='typing'
+  :pre-type-delay='70'
+  :type-delay='70'
+  :pre-erase-delay='2000'
+  :erase-delay='250'
+  erase-style='select-all'
+  :erase-on-complete='false'
+  caret-animation='blink'
+></vue-typer>
+  </div>
+  
+  
+  
+  
+  <div class="typewriter">
+  <h1>ohayo !</h1>
+</div>
+  
+  
+</body>
+<!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  
+  
+  
+  <script src="typewriter-bundle.min.js"></script>
+<span id="typewriter" class="typewriter"></span>
+
+<span class="caret">&nbsp;</span>
+
+<style>
+
+ body{
+ 
+  padding-top: 5em;
+  
+  justify-content: center;
+}
+
+
+.typewriter h1 {
+  color: #ff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+  }
+
+
+</style>
+</html>

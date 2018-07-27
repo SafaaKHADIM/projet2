@@ -1,11 +1,11 @@
-var message={
+var message={{
 	props:{
 		type:{type:String , default: "succes"},
 		messagee:String
 	},
 	template:'<div class="ui message" :class="type">{{messagee}}</div>'
 	
-}
+}}
 
 /*
 Vue.component('message',{
